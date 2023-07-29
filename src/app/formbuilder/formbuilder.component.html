@@ -1,8 +1,18 @@
+<h2>Choose Template</h2>
+  <select name="formTemplates" id="formTemplates" (click)="chooseTemplate($event)" class="form-control">
+    <option value="user">User Form</option>
+    <option value="terms">Terms Agreement Form</option>
+    <option value="issue">Submit Issue Form</option>
+  </select>
+  
+
 <div id="fb-editor"></div>
 
 <div id="fb-rendered-form">
     <form action="#"></form>
+    <!-- <button class="btn btn-default edit-form">Edit</button> -->
 </div>
 
 
 <button (click)="submit()">submit</button>
+<button (click)="clear()">Clear</button>
