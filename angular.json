@@ -35,7 +35,8 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/jquery-ui/dist/jquery-ui.min.js",
-              "node_modules/formBuilder/dist/form-builder.min.js"
+              "node_modules/formBuilder/dist/form-builder.min.js",
+              "src/assets/form-renderer.min.js"
             ]
           },
           "configurations": {

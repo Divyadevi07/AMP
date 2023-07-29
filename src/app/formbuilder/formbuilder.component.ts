@@ -9,6 +9,9 @@ declare var $: any;
 export class FormbuilderComponent {
   fbTemplate!: HTMLElement | null;
   formbuilder: any;
+  formContainer: any;
+  fbOptions!: { onSave: () => void; };
+  formDynamic!: HTMLElement | null;
 
   constructor() {  }
 
@@ -17,7 +20,6 @@ export class FormbuilderComponent {
   }
  
   initializeFormBuilder() {
-
 
     var fields = [{
       label: "Emasil",
@@ -34,9 +36,10 @@ export class FormbuilderComponent {
       showActionButtons: false,
       fields
     });
+    
 
-   
-
+    this.formContainer = document.getElementById('fb-rendered-form');
+  
     // $(this.fbTemplate).formBuilder({fields});
     // var header = function(text: any) {
     //   var h1 = document.createElement('h1');
@@ -53,5 +56,11 @@ export class FormbuilderComponent {
 
   submit(){
     console.log(this.formbuilder.formData);
+    $(this.fbTemplate).toggle();
+    $(this.formContainer).toggle();
+
+    $('form', this.formContainer).formRender({
+      formData: this.formbuilder.formData
+    });
   }
 }
