@@ -30,13 +30,18 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/fonts/feather-icons/feather.css",
+              "src/assets/fonts/tabler-icon/tabler-icons.min.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/jquery-ui/dist/jquery-ui.min.js",
               "node_modules/formBuilder/dist/form-builder.min.js",
-              "src/assets/form-renderer.min.js"
+              "src/assets/form-renderer.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {

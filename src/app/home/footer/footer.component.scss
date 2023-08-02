@@ -1,0 +1,18 @@
+@import "../../../assets/theme/variable.scss";
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: $default;
+    margin-top: 16px;
+    .footer-bottom {
+        padding: 15px 0px;
+        border-top: 1px solid $border;
+        a {
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}

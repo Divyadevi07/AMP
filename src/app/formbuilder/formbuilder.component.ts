@@ -141,7 +141,7 @@ export class FormbuilderComponent {
     this.fbTemplate = document.getElementById('fb-editor');
     this.formbuilder = $(this.fbTemplate).formBuilder({
       controlPosition: 'left',
-      editOnAdd: true,
+      editOnAdd: false,
       scrollToFieldOnAdd: true,
       showActionButtons: false,
       fields
